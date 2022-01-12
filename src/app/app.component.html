@@ -1,0 +1,23 @@
+<h2>Welcome to Maddy's Pizzeria!</h2>
+<h3>Menu: </h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr> 
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let menu of allMenuItems;">
+      <td>{{menu.Item}}</td>
+      <td>{{menu.Category}}</td>
+      <td>${{menu.Price}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
